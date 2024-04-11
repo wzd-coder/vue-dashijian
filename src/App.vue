@@ -1,11 +1,6 @@
 <template>
-  <div>
-    <el-button plain>朴素按钮</el-button>
-    <el-button type='primary' plain>主要按钮</el-button>
-    <el-button type='success' plain>成功按钮</el-button>
-    <el-button type='info' plain>信息按钮</el-button>
-    <el-button type='warning' plain>警告按钮</el-button>
-    <el-button type='danger' plain>危险按钮</el-button>
+  <div class="outer">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,14 +8,19 @@
 export default {
   name: 'App',
 
-  data () {
+  data() {
     return {}
   },
 
-  mounted () {},
+  mounted() {},
 
   methods: {}
 }
 </script>
 
-<style lang='less' scoped></style>
+<style lang='less' scoped>
+.outer {
+  height:100%
+}
+
+</style>
